@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+import './global.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// import Badge from './components/Badge';
+import BadgeNew from './pages/BadgeNew';
+import Badges from './pages/Badges';
+import App from './components/App';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+const root = document.getElementById('root')
+
+// ReactDOM.render(
+//   <Badge
+//     firstName='Carlos' 
+//     lastName='Aguilar'
+//     jobTitle='Frontend Engineer'
+//     twitter='sparragus'
+//   />, 
+//   root)
+
+ReactDOM.render(<App />, root)
